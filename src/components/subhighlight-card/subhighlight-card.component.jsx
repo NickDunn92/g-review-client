@@ -1,10 +1,15 @@
 import React from "react";
+import { Card, Image } from "semantic-ui-react";
+import "./subhighlight-card.styles.scss";
 
-const SubhighlightCard = () => {
+const SubhighlightCard = ({ title, imageUrl }) => {
   return (
-    <div>
-      <h1>All Games</h1>
-    </div>
+    <Card onClick={() => alert(`clicked ${title}`)}>
+      <Image src={imageUrl} wrapped />
+      <Card.Content>
+        <Card.Header>{title}</Card.Header>
+      </Card.Content>
+    </Card>
   );
 };
 

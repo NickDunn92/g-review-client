@@ -1,10 +1,12 @@
 import React from "react";
 import HighlightCard from "../../components/highlight-card/highlight-card.component";
+import SubhighlighCard from "../../components/subhighlight-card/subhighlight-card.component";
 import { Grid } from "semantic-ui-react";
 
 class Homepage extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       games: [
         {
@@ -28,6 +30,16 @@ class Homepage extends React.Component {
           ageRating: 18,
           imageUrl: "http://i.imgur.com/y2INaOB.jpg"
         }
+      ],
+      sections: [
+        {
+          title: "Genres",
+          imageUrl: ""
+        },
+        {
+          title: "Top 10",
+          imageUrl: ""
+        }
       ]
     };
   }
@@ -42,6 +54,17 @@ class Homepage extends React.Component {
               return (
                 <Grid.Column>
                   <HighlightCard {...g} />
+                </Grid.Column>
+              );
+            })}
+          </Grid.Row>
+        </Grid>
+        <Grid columns={2}>
+          <Grid.Row>
+            {this.state.sections.map(s => {
+              return (
+                <Grid.Column>
+                  <SubhighlighCard {...s} />
                 </Grid.Column>
               );
             })}
