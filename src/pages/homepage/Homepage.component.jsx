@@ -34,23 +34,24 @@ class Homepage extends React.Component {
       sections: [
         {
           title: "Genres",
-          imageUrl: ""
+          imageUrl: "https://i.imgur.com/LWFfryq.jpg"
         },
         {
           title: "Top 10",
-          imageUrl: ""
+          imageUrl: "https://i.imgur.com/VEuxLYB.jpg"
         }
       ]
     };
   }
 
   render() {
+    const { games, sections } = this.state;
     return (
       <>
         <h1>G-review</h1>
         <Grid columns={3}>
           <Grid.Row>
-            {this.state.games.map(g => {
+            {games.map(g => {
               return (
                 <Grid.Column>
                   <HighlightCard {...g} />
@@ -61,7 +62,7 @@ class Homepage extends React.Component {
         </Grid>
         <Grid columns={2}>
           <Grid.Row>
-            {this.state.sections.map(s => {
+            {sections.map(s => {
               return (
                 <Grid.Column>
                   <SubhighlighCard {...s} />
