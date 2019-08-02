@@ -1,7 +1,6 @@
 import React from "react";
 import HighlightCard from "../../components/highlight-card/highlight-card.component";
-import SubhighlightCard from "../../components/subhighlight-card/subhighlight-card.component";
-import { Image, Grid } from "semantic-ui-react";
+import { Grid } from "semantic-ui-react";
 
 class Homepage extends React.Component {
   constructor(props) {
@@ -27,7 +26,7 @@ class Homepage extends React.Component {
           title: "Grand Theft Auto 5",
           genre: "Action",
           ageRating: 18,
-          imageUrl: ""
+          imageUrl: "http://i.imgur.com/y2INaOB.jpg"
         }
       ]
     };

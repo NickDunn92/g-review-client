@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Image } from "semantic-ui-react";
+import "./highlight-card.styles.scss";
 
 const HighlightCard = ({ title, genre, description, ageRating, imageUrl }) => {
   return (
