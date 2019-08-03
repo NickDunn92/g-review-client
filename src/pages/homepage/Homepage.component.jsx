@@ -10,21 +10,21 @@ class Homepage extends React.Component {
     this.state = {
       games: [
         {
-          description: "Awesome Game",
+          description: "'A classic, beautifully Remastered'",
           title: "Resident Evil 2",
           genre: "Horror, TPS",
           ageRating: 18,
-          imageUrl: "https://i.imgur.com/DbRYjQV.jpg"
+          imageUrl: "https://i.imgur.com/HKDF9hj.jpg"
         },
         {
-          description: "Awesome Game",
-          title: "Resident Evil 7",
-          genre: "Horror, FPS",
-          ageRating: 18,
-          imageUrl: "https://i.imgur.com/qFtY32C.jpg"
+          description: "'Another great addittion'",
+          title: "FIFA 19",
+          genre: "Sport",
+          ageRating: 3,
+          imageUrl: "https://i.imgur.com/OsKQfI3.jpg"
         },
         {
-          description: "Awesome Game",
+          description: "'Rockstart do it again'",
           title: "Grand Theft Auto 5",
           genre: "Action",
           ageRating: 18,

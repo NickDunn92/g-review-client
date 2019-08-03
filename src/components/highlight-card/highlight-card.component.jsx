@@ -4,7 +4,7 @@ import "./highlight-card.styles.scss";
 
 const HighlightCard = ({ title, genre, description, ageRating, imageUrl }) => {
   return (
-    <Card onClick={() => alert(`clicked ${title}`)}>
+    <Card className={"highlight"} onClick={() => alert(`clicked ${title}`)}>
       <Image src={imageUrl} wrapped />
       <Card.Content>
         <Card.Header>{title}</Card.Header>

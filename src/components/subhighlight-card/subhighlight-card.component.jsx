@@ -4,7 +4,7 @@ import "./subhighlight-card.styles.scss";
 
 const SubhighlightCard = ({ title, imageUrl }) => {
   return (
-    <Card onClick={() => alert(`clicked ${title}`)}>
+    <Card className={"subcard"} onClick={() => alert(`clicked ${title}`)}>
       <Image src={imageUrl} wrapped />
       <Card.Content>
         <Card.Header>{title}</Card.Header>
