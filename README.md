@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/NickDunn92/g-review-client.svg?style=svg)](https://circleci.com/gh/NickDunn92/g-review-client)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
