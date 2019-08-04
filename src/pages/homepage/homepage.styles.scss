@@ -1,0 +1,11 @@
+.column {
+  .ui.card {
+    &.highlight {
+      margin: 0 auto;
+    }
+
+    &.subcard {
+      margin: 0 auto;
+    }
+  }
+}

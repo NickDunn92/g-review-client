@@ -1,10 +1,20 @@
 import React from "react";
 import { Card, Image } from "semantic-ui-react";
+import { withRouter } from "react-router-dom";
+
 import "./highlight-card.styles.scss";
 
-const HighlightCard = ({ title, genre, description, ageRating, imageUrl }) => {
+const HighlightCard = ({
+  id,
+  title,
+  genre,
+  description,
+  ageRating,
+  imageUrl,
+  history
+}) => {
   return (
-    <Card className={"highlight"} onClick={() => alert(`clicked ${title}`)}>
+    <Card className={"highlight"} onClick={() => history.push(`/game/${id}`)}>
       <Image src={imageUrl} wrapped />
       <Card.Content>
         <Card.Header>{title}</Card.Header>
@@ -20,4 +30,4 @@ const HighlightCard = ({ title, genre, description, ageRating, imageUrl }) => {
   );
 };
 
-export default HighlightCard;
+export default withRouter(HighlightCard);
